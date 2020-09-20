@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./style.css">
+ <link rel="stylesheet" href="./bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+ 
+</head>
+
+<body>
+<div class="container">
+    <h1 class=" display-5 text-center my-4">Contact List</h1>
+
+    <form id="contactform">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" class="form-control" id="phone">
+        </div>
+        <div class="form-group">
+            <label for="mail">E-mail Id</label>
+            <input type="text" class="form-control" id="mail">
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" id="submit">
+        </div>
+        
+    </form>
+    <table class="table table-striped col-sm-12">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Phone Number</td>
+                <td>E-mail</td>
+            </tr>
+        </thead>
+        <tbody id="contact-list">
+
+        </tbody>
+    </table>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
